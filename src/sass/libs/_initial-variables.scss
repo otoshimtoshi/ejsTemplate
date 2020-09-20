@@ -1,0 +1,80 @@
+// ==========================================================================
+// family-font
+// ==========================================================================
+$family-font-base: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif !default;
+$family-font-custom: brandon-grotesque, sans-serif !default;
+
+// ==========================================================================
+// breakpoint
+// ==========================================================================
+$xsmall: 320px !default;
+$small: 480px !default;
+$medium: 768px !default;
+$large: 1024px !default;
+$xlarge: 1200px !default;
+
+// ==========================================================================
+// @media screen
+// 使い方
+// [ Input ]
+// @include mq('medium', max) {}
+// [ Output ]
+// @media screen and (max-width: medium) {}
+//
+// [ Input ]
+// @include mq('medium', max) {
+//   @include mq('small', min, true) {}
+// }
+// [ Output ]
+// @media screen and (max-width: medium) and (min-width: $small) {}
+// ==========================================================================
+@mixin mq($breakpoint: medium, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+$mq-breakpoints: (
+  'xsmall': $xsmall,
+  'small': $small,
+  'medium': $medium,
+  'large': $large,
+  'xlarge': $xlarge,
+);
+
+// ==========================================================================
+// font-size
+// ==========================================================================
+$font-size-base: 20px !default; // baseのフォントサイズ
+$font-size-small: 16px !default; // モバイル(480px)のフォントサイズ
+$font-size-large: 30px !default; // PC(1200px)以上のフォントサイズ
+$font-size-h1: 60px !default;
+$font-size-h2: 50px !default;
+$font-size-h3: 40px !default;
+
+// ==========================================================================
+// color
+// ==========================================================================
+// font-color
+$font-base-color: #000000 !default;
+$font-sub-color: #ffffff !default;
+// background-color
+$background-base-color: #ffffff !default;
+$header-background-color: transparent !default; // headerのbackground-colorのベースカラー
+$header-scroll-background-color: rgba(255, 255, 255, 0.3) !default; // headerのscroll後、background-color
+$slider-background-color: #ffffff !default; // sliderエリアのベース背景色
+$footer-background-color: #000000 !default; // fotterエリアのベース背景色
+$news-background-color: #d5c4dd !default; // newsエリアのベース背景色
+$item-background-color: #e7fff6 !default; // itemエリアのベース背景色
+$item-rotate-background-color: #ddd9a4 !default; // itemエリアの斜線の背景色
+$item-rotate-back-background-color: #a1838b !default; // itemエリアのトップの背景色
+$gallery-background-color: #c3e4ba !default; // galleryエリアのトップの背景色
+$content-image-background-color: #dadada !default; // content-imageエリアのトップの背景色
+
+// ==========================================================================
+// box-shadow
+// ==========================================================================
+$base-box-shadow: 0 4px 10px -1px rgba(207, 92, 92, 0.1) !default;

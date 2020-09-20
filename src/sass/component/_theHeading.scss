@@ -1,0 +1,45 @@
+//*************************************************
+// 見出し
+//*************************************************
+.heading {
+  text-align: center;
+  @include font-custom;
+  h1 {
+    font-size: $font-size-h1;
+    letter-spacing: 0.15em;
+  }
+  h2 {
+    font-size: $font-size-h2;
+    letter-spacing: 0.1em;
+  }
+  h3 {
+    font-size: $font-size-h3;
+    letter-spacing: 0.1em;
+  }
+  span {
+    color: #e46e6e;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+//*************************************************
+// 見出し　右寄せ
+//*************************************************
+.heading-right {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  @include font-custom;
+  @include mq('medium', max) {
+    padding: 2em 0 2em 0;
+  }
+  h2 {
+    font-size: $font-size-h2;
+    letter-spacing: 0.1em;
+  }
+  h3 {
+    font-size: $font-size-h3;
+    letter-spacing: 0.1em;
+  }
+}

@@ -1,0 +1,98 @@
+//*************************************************
+// wrapper-content-image
+//*************************************************
+.wrapper-content-image {
+  background-color: $content-image-background-color;
+  padding-bottom: 3em;
+  .content-image-area {
+    width: 1024px;
+    margin: 0 auto;
+    @include mq('medium', max) {
+      width: 100%;
+      padding: 1em 10%;
+    }
+    img {
+      @include mq('medium', max) {
+        width: 100%;
+        height: auto;
+        box-shadow: $base-box-shadow;
+      }
+    }
+    .content-image-contents {
+      @include flexbox;
+      @include flexhashi;
+      text-align: center;
+      @include mq('medium', max) {
+        padding: unset;
+      }
+      .content-image-box {
+        position: relative;
+        width: 49.5%;
+        padding-bottom: 3em;
+        @include mq('medium', max) {
+          width: 100%;
+          padding-bottom: 1em;
+        }
+        &:first-child {
+          position: relative;
+          width: 100%;
+          padding-bottom: 3em;
+          @include mq('medium', max) {
+            width: 100%;
+            padding-bottom: 1em;
+          }
+          img {
+            width: 49.5%;
+            height: auto;
+            box-shadow: $base-box-shadow;
+            @include mq('medium', max) {
+              width: 100%;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+          box-shadow: $base-box-shadow;
+        }
+      }
+    }
+    .text {
+      @include font-base;
+      font-size: 14px;
+      font-weight: lighter;
+      width: 100%;
+      padding-bottom: 3em;
+      @include mq('medium', max) {
+        text-align: left;
+        padding: 0 0.5em 14px;
+      }
+    }
+    p {
+      @include font-base;
+      font-size: 20px;
+      padding: 1em 0 1em 0;
+      width: 100%;
+      @include mq('small', max) {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+    }
+    ol {
+      text-align: left;
+      @include font-base;
+      font-size: 20px;
+      line-height: 1.8;
+      margin-left: 1em;
+      padding: 0.5em 0.5em 0;
+      li {
+        @include font-base;
+        font-weight: lighter;
+        font-size: 14px;
+        width: 100%;
+        list-style: decimal;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}

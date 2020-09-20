@@ -1,2 +1,0 @@
-# ejsTemplate
-ejs-template

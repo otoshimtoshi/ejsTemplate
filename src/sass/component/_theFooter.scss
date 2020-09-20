@@ -1,0 +1,53 @@
+//*************************************************
+// footer
+//*************************************************
+.footer {
+  padding: 6em 0;
+  width: 100%;
+  background-color: $footer-background-color;
+  overflow: hidden;
+  .center {
+    text-align: center;
+  }
+  .footer-nav {
+    ul {
+      @include flexbox;
+      justify-content: center;
+      li {
+        padding: 3em;
+        @include mq('small', max) {
+          padding: 2em;
+        }
+        a {
+          @include font-custom;
+          color: $font-sub-color;
+          line-height: 1.8;
+        }
+      }
+    }
+    p {
+      display: block;
+      width: 25%;
+    }
+  }
+  .footer-bottom {
+    margin-top: 4em;
+    .company-name,
+    .company-discription {
+      @include font-base;
+      color: $font-sub-color;
+      line-height: 1.6;
+      width: 100%;
+      @include mq('medium', max) {
+        text-align: center;
+      }
+    }
+  }
+  small {
+    @include font-custom;
+    color: $font-sub-color;
+    line-height: 3;
+    display: block;
+    margin-top: 3em;
+  }
+}

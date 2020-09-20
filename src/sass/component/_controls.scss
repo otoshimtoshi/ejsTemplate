@@ -1,0 +1,52 @@
+//*************************************************
+// brタグをsmall以下に表示
+//*************************************************
+.br-active {
+  @include mq('small', min) {
+    display: none;
+  }
+}
+
+//*************************************************
+// 縦書き
+//*************************************************
+.vertical {
+  transform: translate(40%, 0) rotate(90deg);
+}
+
+//*************************************************
+// padding
+//*************************************************
+.padding-large {
+  padding: 4em 0 4em 0;
+  @include mq('medium', max) {
+    padding: 2em 0 2em 0;
+  }
+}
+.padding-medium {
+  padding: 2em 0 2em 0;
+  @include mq('medium', max) {
+    padding: 1em 0 1em 0;
+  }
+}
+.padding-small {
+  padding: 1em 0 1em 0;
+  @include mq('medium', max) {
+    padding: 0.5em 0 0.5em 0;
+  }
+}
+//*************************************************
+// 配置
+//*************************************************
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.bottom {
+  text-align: bottom;
+}

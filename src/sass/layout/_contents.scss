@@ -1,0 +1,178 @@
+//*************************************************
+// wrapper-flex-contents
+//*************************************************
+.wrapper-flex-contents {
+  background-color: #ffe4e9;
+  padding-bottom: 10em;
+  position: relative;
+  .flex-contents-area {
+    width: 1200px;
+    margin: 0 auto;
+    @include mq('xlarge', max) {
+      width: 100%;
+      padding: 0 5%;
+    }
+    @include mq('medium', max) {
+      width: 100%;
+      padding: 1em 10%;
+    }
+    .flex-contents-area-flex {
+      @include flexbox;
+      @include flexhashi;
+      width: 100%;
+      li {
+        @include flexbox;
+        @include flexhashi;
+        position: relative;
+        @include font-custom;
+        font-size: 100px;
+        font-weight: bold;
+        width: 50%;
+        line-height: 1;
+        padding-top: 1em;
+        @include mq('medium', max) {
+          padding-top: 0;
+        }
+        @include mq('small', max) {
+          font-size: 50px;
+          padding-bottom: 0.6em;
+        }
+        &:last-child {
+          padding-bottom: 0.5em;
+        }
+        .flex-contents-box {
+          position: relative;
+          width: 100%;
+          height: auto;
+          z-index: 1;
+          @include mq('medium', max) {
+            width: auto;
+            padding-bottom: 0.5em;
+          }
+          @include mq('small', max) {
+            span {
+              position: absolute;
+              top: 4px;
+              font-size: 28px;
+              &:after {
+                content: '.';
+              }
+            }
+          }
+          .reset-pad-left {
+            padding: auto;
+          }
+          p {
+            @include font-base;
+            font-size: 16px;
+            line-height: 1.68;
+            letter-spacing: 0.05em;
+            width: 100%;
+          }
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+          .feature-box-pic-first {
+            position: absolute;
+            max-width: 300px;
+            top: 23%;
+            left: 56%;
+            z-index: -1;
+            @include mq('medium', max) {
+              margin: auto;
+              position: relative;
+              top: 0;
+              left: 0;
+              margin-top: 0.3em;
+            }
+            @include mq('small', max) {
+              position: relative;
+              top: 0;
+              left: 0;
+              max-height: 300px;
+              max-width: 240px;
+              overflow: hidden;
+              margin-top: 0.3em;
+            }
+          }
+          .feature-box-pic-second {
+            overflow: hidden;
+            position: absolute;
+            top: 88%;
+            right: 0;
+            z-index: -1;
+            @include mq('medium', max) {
+              position: relative;
+              top: 0;
+              right: 0;
+              margin-top: 0.3em;
+            }
+            @include mq('small', max) {
+              position: relative;
+              top: 0.5em;
+              right: 0;
+            }
+          }
+          .feature-box-pic-left2 {
+            margin-left: -24%;
+            overflow: hidden;
+            max-width: 800px;
+            @include mq('xlarge', max) {
+              margin-left: auto;
+            }
+            @include mq('medium', max) {
+              margin-left: auto;
+              width: 100%;
+            }
+            @include mq('small', max) {
+              padding: unset;
+            }
+          }
+        }
+        .feature-box-pic-left {
+          margin-left: calc(-50% + 470px);
+          overflow: hidden;
+          max-width: 800px;
+          @include mq('large', max) {
+            margin-left: auto;
+          }
+          @include mq('medium', max) {
+            margin-left: auto;
+            width: 100%;
+          }
+          @include mq('small', max) {
+            padding: unset;
+          }
+        }
+        .feature-box-pic-right {
+          margin-right: calc(-50vw + 300px);
+          overflow: hidden;
+          max-width: 860px;
+          @include mq('xlarge', max) {
+            margin-right: auto;
+          }
+          @include mq('medium', max) {
+            width: 100%;
+            margin-right: auto;
+          }
+          @include mq('small', max) {
+            padding: unset;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .pc-width-nowrap {
+        flex-wrap: nowrap;
+        @include mq('medium', max) {
+          flex-wrap: wrap-reverse;
+        }
+      }
+    }
+  }
+}

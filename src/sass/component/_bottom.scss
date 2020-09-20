@@ -1,0 +1,45 @@
+.btn-list-blck {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em auto 2em;
+  @include mq('medium', max) {
+    width: 100%;
+  }
+  @include mq('small', max) {
+    margin: 2em auto 2em;
+  }
+  li {
+    width: 32%;
+    .btn {
+      display: block;
+      @include font-custom;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px 0;
+      line-height: 1;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      transition: all 0.2s linear;
+      @include mq('small', max) {
+        transition: none;
+      }
+      &.btn-amzon {
+        background: #e46e6e;
+        border: 2px solid #e46e6e;
+        &:hover {
+          background: #fff;
+          color: #e46e6e;
+        }
+      }
+      &.btn-zozo {
+        background: #454f53;
+        border: 2px solid #454f53;
+        &:hover {
+          background: #fff;
+          color: #454f53;
+        }
+      }
+    }
+  }
+}

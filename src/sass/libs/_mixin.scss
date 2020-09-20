@@ -1,0 +1,83 @@
+// ==========================================================================
+// family-font
+// ==========================================================================
+@mixin font-base {
+  font-family: $family-font-base;
+}
+@mixin font-custom {
+  font-family: $family-font-custom;
+}
+// ==========================================================================
+// width
+// ==========================================================================
+@mixin pc-width {
+  width: $xlarge;
+  margin: 0 auto;
+}
+@mixin pc-width-min {
+  min-width: $xlarge;
+  margin: 0 auto;
+}
+@mixin tab-width-large {
+  width: $large;
+  margin: 0 auto;
+}
+@mixin tab-width-min-large {
+  min-width: $large;
+  margin: 0 auto;
+}
+@mixin tab-width {
+  width: $medium;
+  margin: 0 auto;
+}
+@mixin tab-width-min {
+  min-width: $medium;
+  margin: 0 auto;
+}
+@mixin sp-width {
+  width: $small;
+  margin: 0 auto;
+}
+@mixin sp-width-min {
+  min-width: $small;
+  margin: 0 auto;
+}
+// ==========================================================================
+// flex
+// ==========================================================================
+@mixin flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+// 両端そろえ
+@mixin flexhashi {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+// 均等そろえ
+@mixin flexkin {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+// 均等そろえ
+@mixin flexcenter {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+// 左そろえ
+@mixin flexleft {
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+// 右揃え
+@mixin flexright {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}

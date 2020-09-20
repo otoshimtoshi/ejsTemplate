@@ -1,0 +1,11 @@
+{
+  "pages": {
+    "index": {
+      "id": "index",
+      "title": "index",
+      "description": "トップ",
+      "url": "https://localhost:3000",
+      "ogimage": "./"
+    }
+  }
+}

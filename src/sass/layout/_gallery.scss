@@ -1,0 +1,52 @@
+//*************************************************
+// wrapper-gallery
+//*************************************************
+.wrapper-gallery {
+  background-color: $gallery-background-color;
+  position: relative;
+  .gallery-area {
+    width: 937px;
+    margin: 0 auto;
+    @include mq('medium', max) {
+      width: 100%;
+      padding: 1em 10% 0;
+    }
+    .gallery-flex {
+      @include flexbox;
+      @include flexhashi;
+      .gallery-box-outer {
+        position: relative;
+        width: 49%;
+        @include mq('medium', max) {
+          width: 100%;
+        }
+        .gallery-box-inner {
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin-top: 1.05em;
+        }
+        .gallery-box-double {
+          @include flexbox;
+          @include flexhashi;
+          width: 100%;
+          padding-top: 1.05em;
+          .gallery-box-child-left {
+            width: 48%;
+            height: auto;
+            text-align: center;
+          }
+          .gallery-box-child-right {
+            width: 48%;
+            height: auto;
+            text-align: center;
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

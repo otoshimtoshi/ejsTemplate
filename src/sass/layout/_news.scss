@@ -1,0 +1,70 @@
+//*************************************************
+// wrapper-news
+//*************************************************
+.wrapper-news {
+  background-color: $news-background-color;
+  position: relative;
+  .news-area {
+    width: 100%;
+    margin: 0 auto;
+    @include mq('small', max) {
+      padding: 1em 10%;
+    }
+    .news-contents {
+      padding-bottom: 7.78em;
+      @include mq('medium', max) {
+        padding-bottom: 3em;
+      }
+      .news-contents-lay {
+        @include flexbox;
+        @include flexhashi;
+        @include mq('medium', max) {
+          margin: 1em;
+        }
+        @include mq('small', max) {
+          margin: auto;
+        }
+        dt {
+          margin-top: 2.28em;
+          text-align: right;
+          @include font-custom;
+          width: 30%;
+          @include mq('medium', max) {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            margin-top: 1.5em;
+          }
+        }
+        dd {
+          margin-top: 2.28em;
+          text-align: left;
+          @include font-base;
+          width: 65%;
+          @include mq('medium', max) {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            margin-top: 0.8em;
+            line-height: 1.6;
+          }
+          .under-line {
+            text-decoration: underline;
+          }
+          a {
+            &:link,
+            &:visited {
+              color: $font-base-color;
+              text-decoration: underline;
+            }
+            &:hover,
+            &:active {
+              color: $font-base-color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

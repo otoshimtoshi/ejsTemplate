@@ -1,0 +1,19 @@
+// ==========================================================================
+// base
+// ==========================================================================
+html {
+  font-size: $font-size-base;
+  @include mq('small', min) {
+    font-size: $font-size-small;
+  }
+}
+body {
+  background: $background-base-color;
+  @include font-base;
+  box-sizing: border-box;
+  color: $font-base-color;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}

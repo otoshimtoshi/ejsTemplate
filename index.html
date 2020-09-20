@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- headに渡すパラメータあり -->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <title>index</title>
+  <meta name="description" content="トップ" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="index" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://localhost:3000" />
+  <meta property="og:description" content="トップ" />
+  <meta property="og:site_name" content="index" />
+  <meta property="og:image" content="./" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./plugin/slick/slick.css" />
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./plugin/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/scrolla.jquery.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+  <link rel=”icon” href=“./favicon.ico”>
+</head>
+
+  <body>
+    <!-- ハンバーガーメニューと押下後の全画面表示エリア -->
+    <div id="gloval-nav">
+  <nav>
+    <ul id="anker-link">
+      <li><a href="./">TOP</a></li>
+      <li><a href="#">LINK1</a></li>
+      <li><a href="#">LINK2</a></li>
+      <li><a href="#">LINK3</a></li>
+      <li><a href="#">LINK4</a></li>
+      <li><a href="#">LINK5</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="nav-toggle">
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+    <div id="top" class="wrapper">
+      <!-- ヘッダー -->
+      <header class="header">
+  <nav class="header-nav">
+    <div class="logo">
+      <a href="./">
+        <img src="./img/logo.png" alt="" />
+      </a>
+    </div>
+  </nav>
+</header>
+
+      <!-- ファーストビュー -->
+      <section class="wrapper-top-area">
+  <div class="top-area">
+    <div class="top-text">
+      <p>ファーストビューテキスト</p>
+    </div>
+  </div>
+</section>
+
+      <!-- スライド -->
+      <article class="wrapper-slider">
+  <div class="slider-area">
+    <div id="slider-left" class="slide-left" dir="rtl">
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+    </div>
+    <div id="slider-right" class="slide-right">
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+      <img src="./img/sample.png" alt="" />
+    </div>
+  </div>
+</article>
+
+      <div class="heading padding-large">
+        <h1>見出し1</h1>
+      </div>
+      <!-- お知らせ -->
+      <section id="news" class="wrapper-news">
+  <div class="news-area">
+    <div class="heading padding-large">
+      <h2>見出し2</h2>
+    </div>
+    <div class="news-contents">
+      <dl class="news-contents-lay">
+        <dt>2020.XX.XX</dt>
+        <dd>説明文1</dd>
+      </dl>
+      <dl class="news-contents-lay">
+        <dt>2020.XX.XX</dt>
+        <dd>説明文2</dd>
+      </dl>
+      <dl class="news-contents-lay">
+        <dt>2020.XX.XX</dt>
+        <dd>説明文3</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+      <!-- flexのコンテンツエリア（2カラム） -->
+      <section id="feature" class="wrapper-flex-contents">
+  <div class="heading-right vertical">
+    <h2>見出し2（縦書き）</h2>
+  </div>
+  <div class="flex-contents-area">
+    <ol class="flex-contents-area-flex">
+      <li>
+        <div class="flex-contents-box">
+          <span>1</span>
+          <div class="heading left">
+            <h3>見出し3</h3>
+            <p>コンテンツエリア</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-contents-box">
+          <span>2</span>
+          <div class="heading left">
+            <h3>見出し3</h3>
+            <p>コンテンツエリア</p>
+          </div>
+        </div>
+      </li>
+      <li class="pc-width-nowrap">
+        <div class="flex-contents-box">
+          <span>3</span>
+          <div class="heading left">
+            <h3>見出し3</h3>
+            <p>コンテンツエリア</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-contents-box">
+          <span>4</span>
+          <div class="heading left">
+            <h3>見出し3</h3>
+            <p>コンテンツエリア</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex-contents-box">
+          <span>5</span>
+          <div class="heading left">
+            <h3>見出し3</h3>
+            <p>コンテンツエリア</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+      <!-- itemのコンテンツエリア（3カラム） -->
+      <section class="wrapper-item">
+  <div class="wrapper-item-face">
+    <div class="wrapper-item-rotate">
+      <div id="item" class="item-area-outer">
+        <div class="item-area">
+          <div class="heading padding-large">
+            <h2>ITEM</h2>
+            <p>説明</p>
+          </div>
+          <div class="item-flex">
+            <ul class="item-flex-list">
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名1</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名2</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名3</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名4</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名5</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+              <li>
+                <div class="item-box">
+                  <img src="./img/sample.png" alt="" />
+                  <p class="product-name">商品名6</p>
+                  <p>固有名</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="btn-list-blck">
+              <li><a href="#" target="_blank" class="btn btn-amzon">BUTTON1</a></li>
+              <li><a href="#" target="_blank" class="btn btn-amzon">BUTTON2</a></li>
+              <li><a href="#" target="_blank" class="btn btn-amzon">BUTTON3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- galleryのコンテンツエリア（2カラムを2カラム→1カラム、逆も可能） -->
+      <section class="wrapper-gallery">
+  <div id="gallery" class="gallery-area">
+    <div class="heading padding-large">
+      <h2>GALLERY</h2>
+    </div>
+    <div class="gallery-flex">
+      <div class="gallery-box-outer">
+        <div class="gallery-box-inner">
+          <a href="#" target="_blank">
+            <img src="./img/sample.png" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box-double">
+          <div class="gallery-box-child-left">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+          <div class="gallery-box-child-right">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-box-outer">
+        <div class="gallery-box-double">
+          <div class="gallery-box-child-left">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+          <div class="gallery-box-child-right">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="gallery-box-inner">
+          <a href="#" target="_blank">
+            <img src="./img/sample.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-flex">
+      <div class="gallery-box-outer">
+        <div class="gallery-box-inner">
+          <a href="#" target="_blank">
+            <img src="./img/sample.png" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box-double">
+          <div class="gallery-box-child-left">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+          <div class="gallery-box-child-right">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-box-outer">
+        <div class="gallery-box-double">
+          <div class="gallery-box-child-left">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+          <div class="gallery-box-child-right">
+            <a href="#" target="_blank">
+              <img src="./img/sample.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="gallery-box-inner">
+          <a href="#" target="_blank">
+            <img src="./img/sample.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- 画像付きコンテンツエリア -->
+      <section id="content-image" class="wrapper-content-image">
+  <div class="content-image-area">
+    <div class="heading padding-large">
+      <h2>見出し2</h2>
+      <p>説明</p>
+    </div>
+    <div class="content-image-contents">
+      <div class="content-image-box heading">
+        <h3>見出し3</h3>
+        <img src="./img/sample.png" alt="" />
+        <p>説明</p>
+        <p class="text">詳細</p>
+      </div>
+      <div class="content-image-box heading">
+        <h3>見出し3</h3>
+        <img src="./img/sample.png" alt="" />
+        <ol>
+          <li>詳細説明1</li>
+          <li>詳細説明2</li>
+        </ol>
+      </div>
+      <div class="content-image-box heading">
+        <h3>見出し3</h3>
+        <img src="./img/sample.png" alt="" />
+        <ol start="3">
+          <li>詳細説明3</li>
+        </ol>
+      </div>
+      <div class="content-image-box heading">
+        <h3>見出し3</h3>
+        <img src="./img/sample.png" alt="" />
+        <ol start="4">
+          <li>詳細説明4</li>
+          <li>詳細説明5</li>
+          <li>詳細説明6</li>
+        </ol>
+      </div>
+      <div class="content-image-box heading">
+        <h3>見出し3</h3>
+        <img src="./img/sample.png" alt="" />
+        <ol start="7">
+          <li>詳細説明7</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- フッター -->
+      <footer id="contact" class="footer">
+  <div class="center">
+    <a href="#" target="_blank"><img src="./img/instagram-logo.png" alt="" /></a>
+    <div class="footer-bottom">
+      <p class="company-name">会社名</p>
+      <p class="company-discription">会社説明</p>
+      <small>アンカーテキスト</small>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

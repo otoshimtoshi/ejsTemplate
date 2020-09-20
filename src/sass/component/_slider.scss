@@ -1,0 +1,26 @@
+//*************************************************
+// wrapper-slider
+//*************************************************
+.wrapper-slider {
+  background-color: $slider-background-color;
+  position: relative;
+  width: 100%;
+  height: auto;
+  @include mq('medium', max) {
+    margin: 1em;
+  }
+  @include mq('small', max) {
+    margin: auto;
+  }
+  .slider-area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    .slide-left {
+      // padding-top: 0.8em;
+    }
+    .slide-right {
+      // padding-top: 0.8em;
+    }
+  }
+}

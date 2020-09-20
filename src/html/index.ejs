@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- headに渡すパラメータあり -->
+  <%- include('../component/head.ejs', { pageData: pageData } ) %>
+  <body>
+    <!-- ハンバーガーメニューと押下後の全画面表示エリア -->
+    <%- include('../component/glovalNav.ejs') %>
+    <div id="top" class="wrapper">
+      <!-- ヘッダー -->
+      <%- include('../component/TheHeader.ejs') %>
+      <!-- ファーストビュー -->
+      <%- include('../component/top.ejs') %>
+      <!-- スライド -->
+      <%- include('../component/sliderArticle.ejs') %>
+      <div class="heading padding-large">
+        <h1>見出し1</h1>
+      </div>
+      <!-- お知らせ -->
+      <%- include('../component/news.ejs') %>
+      <!-- flexのコンテンツエリア（2カラム） -->
+      <%- include('../component/contents.ejs') %>
+      <!-- itemのコンテンツエリア（3カラム） -->
+      <%- include('../component/item.ejs') %>
+      <!-- galleryのコンテンツエリア（2カラムを2カラム→1カラム、逆も可能） -->
+      <%- include('../component/gallery.ejs') %>
+      <!-- 画像付きコンテンツエリア -->
+      <%- include('../component/contentImages.ejs'); %>
+      <!-- フッター -->
+      <%- include('../component/TheFooter.ejs'); %>
+    </div>
+  </body>
+</html>
